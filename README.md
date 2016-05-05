@@ -8,7 +8,7 @@ node api client for [Rooftop CMS](https://www.rooftopcms.com/)
 
 ### Installation
 
-`npm i rooftop -S`
+`npm i rooftop-client -S`
 
 > **Note:** This project only supports Node 6+
 
