@@ -1,6 +1,6 @@
 {
   "name": "rooftop",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "node api client for rooftop cms",
   "main": "lib",
   "scripts": {
