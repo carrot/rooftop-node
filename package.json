@@ -19,5 +19,8 @@
   "dependencies": {
     "joi": "^8.0.5",
     "rest": "^1.3.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
