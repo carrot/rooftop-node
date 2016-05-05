@@ -3,6 +3,11 @@ require('dotenv').config()
 const Rooftop = require('..')
 const test = require('ava')
 
+const api = Rooftop.new({
+  name: process.env.name,
+  apiToken: process.env.token
+})
+
 test('errors with incorrect options', (t) => {
   t.throws(
     () => { Rooftop.new() }, // eslint-disable-line
@@ -35,21 +40,18 @@ test('errors when trying to get posts with wrong api key', (t) => {
 })
 
 test('errors when trying to get nonexistant post type', (t) => {
-  const api = Rooftop.new({
-    name: process.env.name,
-    apiToken: process.env.token
-  })
-
   return api.fooBars.get().catch((r) => t.is(r.status.code, 404))
 })
 
 test('gets data when valid data is provided', (t) => {
-  const api = Rooftop.new({
-    name: process.env.name,
-    apiToken: process.env.token
-  })
-
   return api.posts.get().then((res) => {
     t.truthy(res.length > 0)
+  })
+})
+
+test('params passed to get() work correctly', (t) => {
+  return api.posts.get({ search: 'regular' }).then((res) => {
+    t.truthy(res.length === 1)
+    t.is(res[0].slug, 'hello-world')
   })
 })
