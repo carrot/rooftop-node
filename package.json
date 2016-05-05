@@ -1,5 +1,5 @@
 {
-  "name": "rooftop",
+  "name": "rooftop-client",
   "version": "0.0.1",
   "description": "node api client for rooftop cms",
   "main": "lib",
@@ -8,11 +8,6 @@
   },
   "author": "carrot",
   "license": "MIT",
-  "babel": {
-    "presets": [
-      "es2015-node5"
-    ]
-  },
   "devDependencies": {
     "ava": "0.14.x",
     "dotenv": "^2.0.0",
