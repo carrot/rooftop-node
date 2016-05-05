@@ -31,8 +31,9 @@ api.caseStudies.get().then(console.log)
 // get the first 5 posts
 api.posts.get(5).then(console.log)
 
-// get only posts with a matching title, works for any property
-api.posts.get({ title: 'foo' }).then(console.log)
+// get only posts with content matching the search query
+// see http://v2.wp-api.org/reference/posts/ for possible params
+api.posts.get({ search: 'hello' }).then(console.log)
 ```
 
 ### License & Contributing
