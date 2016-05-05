@@ -2,13 +2,15 @@
 
 [![npm](http://img.shields.io/npm/v/rooftop.svg?style=flat)](https://badge.fury.io/js/rooftop) [![tests](http://img.shields.io/travis/carrot/rooftop/master.svg?style=flat)](https://travis-ci.org/carrot/rooftop) [![dependencies](http://img.shields.io/gemnasium/carrot/rooftop.svg?style=flat)](https://gemnasium.com/carrot/rooftop)
 
-node api client for rooftop cms
+node api client for [Rooftop CMS](https://www.rooftopcms.com/)
 
 > **Note:** This project is in early development, and versioning is a little different. [Read this](http://markup.im/#q4_cRZ1Q) for more details.
 
 ### Installation
 
 `npm i rooftop -S`
+
+> **Note:** This project only supports Node 6+
 
 ### Usage
 

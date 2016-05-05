@@ -9,7 +9,7 @@ If you are opening an issue about a bug, make sure that you include clear steps 
 ### Getting Set Up
 
 - Clone the project down
-- Make sure [nodejs](http://nodejs.org) has been installed and is above version `5.2.x`
+- Make sure [nodejs](http://nodejs.org) has been installed and is above version `6.0.x`
 - Run `npm install`
 - Put in work
 
