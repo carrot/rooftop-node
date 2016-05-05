@@ -1,6 +1,6 @@
 # rooftop
 
-[![npm](http://img.shields.io/npm/v/rooftop-client.svg?style=flat)](https://badge.fury.io/js/rooftop-client) [![tests](http://img.shields.io/travis/carrot/rooftop-node/master.svg?style=flat)](https://travis-ci.org/carrot/rooftop-node) [![dependencies](http://img.shields.io/gemnasium/carrot/rooftop-node.svg?style=flat)](https://gemnasium.com/carrot/rooftop-node)
+[![npm](http://img.shields.io/npm/v/rooftop-client.svg?style=flat)](https://badge.fury.io/js/rooftop-client) [![tests](http://img.shields.io/travis/carrot/rooftop-node/master.svg?style=flat)](https://travis-ci.org/carrot/rooftop-node) [![dependencies](https://img.shields.io/david/carrot/rooftop-node.svg?style=flat)](https://david-dm.org/carrot/rooftop-node)
 
 node api client for [Rooftop CMS](https://www.rooftopcms.com/)
 

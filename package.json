@@ -11,7 +11,7 @@
   "devDependencies": {
     "ava": "0.14.x",
     "dotenv": "^2.0.0",
-    "standard": "5.x"
+    "standard": "7.x"
   },
   "ava": {
     "verbose": "true"
