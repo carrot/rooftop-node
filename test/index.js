@@ -28,7 +28,7 @@ test('initializes with correct options', (t) => {
 test('errors when trying to get posts with wrong site', (t) => {
   const api = Rooftop.new({ name: 'foo', apiToken: 'bar' })
   return api.posts.get().catch((res) => {
-    t.is(res.error.toString(), 'Error: getaddrinfo ENOTFOUND foo.rooftopcms.io foo.rooftopcms.io:80')
+    t.is(res.error.toString(), 'Error: getaddrinfo ENOTFOUND foo.rooftopcms.io foo.rooftopcms.io:443')
   })
 })
 

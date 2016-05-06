@@ -8,7 +8,7 @@ node api client for [Rooftop CMS](https://www.rooftopcms.com/)
 
 ### Installation
 
-`npm i rooftop -S`
+`npm i rooftop-client -S`
 
 > **Note:** This project only supports Node 6+
 
@@ -35,6 +35,12 @@ api.posts.get(5).then(console.log)
 // see http://v2.wp-api.org/reference/posts/ for possible params
 api.posts.get({ search: 'hello' }).then(console.log)
 ```
+
+### Testing
+To run the tests locally, you'll need to add a `test/.env` with your name and token values:
+- `cp test/.env.sample test/.env`
+- `name` is derived from your Rooftop url. Assuming your URL is https://myproject.rooftop.io then **myproject** is your name value
+- `token` can be found <https://[myproject].rooftopcms.io/wp-admin/admin.php?page=rooftop-overview>
 
 ### License & Contributing
 

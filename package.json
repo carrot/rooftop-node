@@ -1,18 +1,8 @@
 {
   "name": "rooftop-client",
-  "version": "0.0.1",
   "description": "node api client for rooftop cms",
-  "main": "lib",
-  "scripts": {
-    "test": "ava"
-  },
+  "version": "0.0.1",
   "author": "carrot",
-  "license": "MIT",
-  "devDependencies": {
-    "ava": "0.14.x",
-    "dotenv": "^2.0.0",
-    "standard": "7.x"
-  },
   "ava": {
     "verbose": "true"
   },
@@ -20,7 +10,17 @@
     "joi": "^8.0.5",
     "rest": "^1.3.2"
   },
+  "devDependencies": {
+    "ava": "0.14.x",
+    "dotenv": "^2.0.0",
+    "standard": "7.x"
+  },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "license": "MIT",
+  "main": "lib",
+  "scripts": {
+    "test": "ava"
   }
 }
