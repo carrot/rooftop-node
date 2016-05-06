@@ -1,5 +1,5 @@
-src
 test
 contributing.md
 .editorconfig
 .travis.yml
+.doclets.yml
