@@ -1,7 +1,7 @@
 {
   "name": "rooftop-client",
   "description": "node api client for rooftop cms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "carrot",
   "ava": {
     "verbose": "true"
