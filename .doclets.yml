@@ -1,6 +1,6 @@
 dir: lib
 packageJson: package.json
 articles:
-  - overview: readme.md
+  - overview: README.md
 branches:
   - master
