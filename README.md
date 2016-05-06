@@ -15,7 +15,7 @@ node api client for [Rooftop CMS](https://www.rooftopcms.com/)
 ### Usage
 
 ```js
-const Rooftop = require('rooftop')
+const Rooftop = require('rooftop-client')
 
 const api = Rooftop.new({
   name: 'yoursubdomain',
