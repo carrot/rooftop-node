@@ -19,7 +19,8 @@ const Rooftop = require('rooftop-client')
 
 const api = Rooftop.new({
   name: 'yoursubdomain',
-  apiToken: 'xxx'
+  apiToken: 'xxx',
+  url: 'http://yoursubdomain.domain.com' // Overrides https://yoursubdomain.rooftopcms.io
 })
 
 // get all posts

@@ -55,3 +55,21 @@ test('params passed to get() work correctly', (t) => {
     t.is(res[0].slug, 'hello-world')
   })
 })
+
+test('uses (http) url instead of name', (t) => {
+  const api = Rooftop.new({
+    name: process.env.name, apiToken: process.env.token, url: 'http://carrotcreativedemo.rooftopcms.io'
+  })
+  return api.posts.get().catch((res) => {
+    t.is(res.url, 'http://carrotcreativedemo.rooftopcms.io/wp-json/wp/v2/posts')
+  })
+})
+
+test('uses (https) when `//` is present in url', (t) => {
+  const api = Rooftop.new({
+    name: process.env.name, apiToken: process.env.token, url: '//carrotcreativedemo.rooftopcms.io'
+  })
+  return api.posts.get().catch((res) => {
+    t.is(res.url, 'https://carrotcreativedemo.rooftopcms.io/wp-json/wp/v2/posts')
+  })
+})
