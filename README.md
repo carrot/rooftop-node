@@ -18,9 +18,8 @@ node api client for [Rooftop CMS](https://www.rooftopcms.com/)
 const Rooftop = require('rooftop-client')
 
 const api = Rooftop.new({
-  name: 'yoursubdomain',
+  url: 'https://yoursubdomain.rooftopcms.io'
   apiToken: 'xxx',
-  url: 'http://yoursubdomain.domain.com' // Overrides https://yoursubdomain.rooftopcms.io
 })
 
 // get all posts
