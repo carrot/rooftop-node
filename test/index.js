@@ -56,7 +56,7 @@ test('params passed to get() work correctly', (t) => {
   })
 })
 
-test('uses (http) url instead of name', (t) => {
+test('uses (http) url instead of https', (t) => {
   const api = Rooftop.new({
     url: 'http://carrotcreativedemo.rooftopcms.io', apiToken: process.env.token
   })
