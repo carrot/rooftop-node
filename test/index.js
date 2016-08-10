@@ -51,8 +51,8 @@ test('gets data when valid data is provided', (t) => {
 
 test('params passed to get() work correctly', (t) => {
   return api.posts.get({ search: 'regular' }).then((res) => {
-    t.truthy(res.length === 6)
-    t.is(res[0].slug, 'amazing')
+    t.truthy(res.length === 2)
+    t.is(res[0].slug, 'testing-123')
   })
 })
 
