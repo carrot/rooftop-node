@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
+    "coveralls": "^2.11.12",
     "dotenv": "^2.0.0",
     "standard": "7.x"
   },
@@ -21,6 +22,10 @@
   "license": "MIT",
   "main": "lib",
   "scripts": {
-    "test": "ava"
-  }
+    "test": "ava",
+    "coveralls": "nyc --reporter=lcov ava && cat ./coverage/lcov.info | coveralls"
+  },
+  "keywords": [
+    "rooftopcms"
+  ]
 }
