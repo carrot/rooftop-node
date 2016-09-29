@@ -50,9 +50,15 @@ test('gets data when valid data is provided', (t) => {
 })
 
 test('params passed to get() work correctly', (t) => {
-  return api.posts.get({ search: 'regular' }).then((res) => {
-    t.truthy(res.length === 6)
-    t.is(res[0].slug, 'amazing')
+  return api.posts.get({ per_page: 2 }).then((res) => {
+    t.truthy(res.length === 2)
+  })
+})
+
+test('can handle multiple params passed to get()', (t) => {
+  return api.posts.get({ per_page: 2,  order: 'asc', orderby: 'id', }).then((res) => {
+    t.truthy(res.length === 2)
+    t.is(res[0].id, 125)
   })
 })
 
