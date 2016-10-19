@@ -33,7 +33,7 @@ api.posts.get(5).then(console.log)
 
 // get only posts with content matching the search query
 // see http://v2.wp-api.org/reference/posts/ for possible params
-api.posts.get({ search: 'hello' }).then(console.log)
+api.posts.get({ params: { search: 'hello' } }).then(console.log)
 ```
 
 ### Testing
