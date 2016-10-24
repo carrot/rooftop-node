@@ -50,32 +50,32 @@ test('gets data when valid data is provided', (t) => {
 })
 
 test('params passed to get() work correctly', (t) => {
-  return api.posts.get({ params: { per_page: 2 }}).then((res) => {
+  return api.posts.get({ params: { per_page: 2 } }).then((res) => {
     t.truthy(res.length === 2)
   })
 })
 
 test('can handle multiple params passed to get()', (t) => {
-  return api.posts.get({ params: { per_page: 2,  order: 'asc', orderby: 'id', }}).then((res) => {
+  return api.posts.get({ params: { per_page: 2, order: 'asc', orderby: 'id' } }).then((res) => {
     t.truthy(res.length === 2)
-    t.is(res[0].id, 125)
+    t.is(res[0].id, 1)
   })
 })
 
 test('uses http instead of https', (t) => {
   const api = Rooftop.new({
-    url: 'http://carrotcreativedemo.rooftopcms.io', apiToken: process.env.token
+    url: 'http://rooftop-seeds.rooftopcms.io', apiToken: process.env.token
   })
   return api.posts.get().catch((res) => {
-    t.is(res.url, 'http://carrotcreativedemo.rooftopcms.io/wp-json/wp/v2/posts')
+    t.is(res.url, 'http://rooftop-seeds.rooftopcms.io/wp-json/wp/v2/posts')
   })
 })
 
 test('uses (https) when `//` is present in url', (t) => {
   const api = Rooftop.new({
-    url: '//carrotcreativedemo.rooftopcms.io', apiToken: process.env.token
+    url: '//rooftop-seeds.rooftopcms.io', apiToken: process.env.token
   })
   return api.posts.get().catch((res) => {
-    t.is(res.url, 'https://carrotcreativedemo.rooftopcms.io/wp-json/wp/v2/posts')
+    t.is(res.url, 'https://rooftop-seeds.rooftopcms.io/wp-json/wp/v2/posts')
   })
 })
